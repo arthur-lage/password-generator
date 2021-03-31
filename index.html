@@ -14,10 +14,10 @@
     <div class="container">
         <h1>Random Password Generator</h1>
         <div class="password-container">
-            <input max="16" disabled type="text" id="password" placeholder="Click the button below me!">
-            <button id="copy-password"><i class="fas fa-clipboard"></i></button>
+            <input title="Your Password Will Appear Here" max="16" type="text" disabled id="password" placeholder="Click the button below me!">
+            <button onclick="copyPassword()" title="Copy" id="copy-password"><i class="fas fa-clipboard"></i></button>
         </div>
-        <button id="generate-password-button">Generate Password</button>
+        <button onclick="generatePassword()" title="Generate New Password" id="generate-password-button">Generate Password</button>
     </div>
     <script src="app.js"></script>
 </body>
